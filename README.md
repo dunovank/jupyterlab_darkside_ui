@@ -34,8 +34,6 @@ jupyter labextension uninstall @dunovank/jupyterlab_darkside_ui
 ### Build/Watch in Terminal 1
 
 ```bash
-######################## SHELL 1 ##############################
-# List extensions.
 # Clone the repo to your local environment
 # Change directory to the jupyterlab_darkside_ui directory
 # Install package in development mode
@@ -54,8 +52,6 @@ jlpm run watch
 ### Run JupyterLab in Terminal 2
 
 ```bash
-######################## SHELL 2 ##############################
-# Run JupyterLab in terminal 2
 jupyter lab
 ```
 
