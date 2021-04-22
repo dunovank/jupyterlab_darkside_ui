@@ -1,5 +1,5 @@
 {
-  "name": "@dunovank/jupyterlab_legos_ui",
+  "name": "@dunovank/jupyterlab_darkside_ui",
   "version": "0.1.1",
   "description": "legos light ui and syntax theme for jupyterlab",
   "keywords": [
@@ -8,9 +8,9 @@
     "jupyterlab-extension",
     "jupyterlab-theme"
   ],
-  "homepage": "https://github.com/dunovank/jupyterlab_legos_ui",
+  "homepage": "https://github.com/dunovank/jupyterlab_darkside_ui",
   "bugs": {
-    "url": "https://github.com/dunovank/jupyterlab_legos_ui/issues"
+    "url": "https://github.com/dunovank/jupyterlab_darkside_ui/issues"
   },
   "license": "BSD-3-Clause",
   "author": "Kyle Dunovan",
@@ -23,7 +23,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dunovank/jupyterlab_legos_ui.git"
+    "url": "https://github.com/dunovank/jupyterlab_darkside_ui.git"
   },
   "scripts": {
     "build": "jlpm run build:lib && jlpm run build:labextension:dev",
@@ -33,7 +33,7 @@
     "build:lib": "tsc",
     "clean": "jlpm run clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
-    "clean:labextension": "rimraf jupyterlab_legos_ui/labextension",
+    "clean:labextension": "rimraf jupyterlab_darkside_ui/labextension",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
     "eslint": "eslint . --ext .ts,.tsx --fix",
     "eslint:check": "eslint . --ext .ts,.tsx",
@@ -64,6 +64,6 @@
   "jupyterlab": {
     "extension": true,
     "themePath": "style/index.css",
-    "outputDir": "jupyterlab_legos_ui/labextension"
+    "outputDir": "jupyterlab_darkside_ui/labextension"
   }
 }

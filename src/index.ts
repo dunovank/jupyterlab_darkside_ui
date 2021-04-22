@@ -6,17 +6,17 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * Initialization data for the @dunovank/jupyterlab_legos_ui extension.
+ * Initialization data for the @dunovank/jupyterlab_darkside_ui extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
-  id: '@dunovank/jupyterlab_legos_ui',
+  id: '@dunovank/jupyterlab_darkside_ui',
   requires: [IThemeManager],
   autoStart: true,
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    // console.log(`JupyterLab·extension·@dunovank/jupyterlab_legos_ui·is·activated!`);
-    const style = '@dunovank/jupyterlab_legos_ui/index.css';
+    // console.log(`JupyterLab·extension·@dunovank/jupyterlab_darkside_ui·is·activated!`);
+    const style = '@dunovank/jupyterlab_darkside_ui/index.css';
     manager.register({
-      name: '@dunovank/jupyterlab_legos_ui',
+      name: '@dunovank/jupyterlab_darkside_ui',
       isLight: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)

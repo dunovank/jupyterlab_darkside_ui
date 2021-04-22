@@ -28,5 +28,5 @@ jobs:
         jlpm
         jlpm run eslint:check
         python -m pip install .
-        jupyter labextension list 2>&1 | grep -ie "@dunovank/jupyterlab_legos_ui.*OK"
+        jupyter labextension list 2>&1 | grep -ie "@dunovank/jupyterlab_darkside_ui.*OK"
         python -m jupyterlab.browser_check

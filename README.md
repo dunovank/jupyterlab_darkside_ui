@@ -1,11 +1,11 @@
-# jupyterlab_legos_ui
+# jupyterlab_darkside_ui
 
-![Github Actions Status](https://github.com/dunovank/jupyterlab_legos_ui/workflows/Build/badge.svg)
+![Github Actions Status](https://github.com/dunovank/jupyterlab_darkside_ui/workflows/Build/badge.svg)
 
 Legos light ui and syntax theme for jupyterlab
 
 ## Preview
-![](./jupyterlab_legos_ui.png)
+![](./jupyterlab_darkside_ui.png)
 
 ## Requirements
 
@@ -13,17 +13,17 @@ Legos light ui and syntax theme for jupyterlab
 
 ## Install
 ***NOTE:*** After installing and launching `jupyter lab`, the theme still needs to be enabled:
-***Settings > JupyterLab Theme > @dunovank/jupyterlab_legos_ui***
+***Settings > JupyterLab Theme > @dunovank/jupyterlab_darkside_ui***
 
 ```bash
-pip install jupyterlab_legos_ui
+pip install jupyterlab_darkside_ui
 ```
 
 ### Uninstall
 
 ```bash
-pip uninstall jupyterlab_legos_ui
-jupyter labextension uninstall @dunovank/jupyterlab_legos_ui
+pip uninstall jupyterlab_darkside_ui
+jupyter labextension uninstall @dunovank/jupyterlab_darkside_ui
 ```
 
 > TODO
@@ -39,7 +39,7 @@ jupyter labextension develop --overwrite
 ```bash
 # List extensions.
 jupyter labextension list
-pip list | grep  jupyterlab_legos_ui
+pip list | grep  jupyterlab_darkside_ui
 ```
 
 ```bash
@@ -99,7 +99,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the jupyterlab_legos_ui directory
+# Change directory to the jupyterlab_darkside_ui directory
 # Install package in development mode
 pip install -e .
 # Link your development version of the extension with JupyterLab

@@ -1,13 +1,13 @@
 include LICENSE
 include README.md
 include pyproject.toml
-include jupyter-config/jupyterlab_legos_ui.json
+include jupyter-config/jupyterlab_darkside_ui.json
 
 include package.json
 include install.json
 include ts*.json
 
-graft jupyterlab_legos_ui/labextension
+graft jupyterlab_darkside_ui/labextension
 
 # Javascript files
 graft src

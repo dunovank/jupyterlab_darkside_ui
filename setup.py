@@ -1,5 +1,5 @@
 """
-jupyterlab_legos_ui setup
+jupyterlab_darkside_ui setup
 """
 import json
 import os
@@ -13,7 +13,7 @@ import setuptools
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 # The name of the project
-name = "jupyterlab_legos_ui"
+name = "jupyterlab_darkside_ui"
 
 # Get our version
 with open(os.path.join(HERE, 'package.json')) as f:
@@ -32,7 +32,7 @@ package_data_spec = {
     ]
 }
 
-labext_name = "@dunovank/jupyterlab_legos_ui"
+labext_name = "@dunovank/jupyterlab_darkside_ui"
 
 data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, lab_path, "**"),
@@ -63,9 +63,9 @@ with open("README.md", "r") as fh:
 setup_args = dict(
     name=name,
     version=version,
-    url="https://github.com/dunovank/jupyterlab_legos_ui",
+    url="https://github.com/dunovank/jupyterlab_darkside_ui",
     author="Kyle Dunovan",
-    description="legos light ui and syntax theme for jupyterlab",
+    description="darkside ui and syntax theme for jupyterlab",
     long_description=long_description,
     long_description_content_type="text/markdown",
     cmdclass=cmdclass,
