@@ -102,9 +102,11 @@ jupyter lab build
 ## Publish
 
 ```bash
-pip install jupyter_packaging twine && \
-  python setup.py sdist bdist_wheel && \
-  twine upload dist/*
+pip install jupyter_packaging twine
+```
+
+```bash
+  python setup.py sdist bdist_wheel && twine upload dist/*
 ```
 
 ```bash
