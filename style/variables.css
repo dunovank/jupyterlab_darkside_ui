@@ -117,10 +117,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(215, 225, 255, 1.0);
-  --jp-ui-font-color1: rgba(205, 210, 233, 0.87);
-  --jp-ui-font-color2: rgba(205, 210, 233, 0.54);
-  --jp-ui-font-color3: rgba(205, 210, 233, 0.38);
+  --jp-ui-font-color0: rgb(245, 249, 255);
+  --jp-ui-font-color1: rgba(220, 230, 255, 0.95);
+  --jp-ui-font-color2: rgba(220, 230, 255, 0.80);
+  --jp-ui-font-color3: rgba(220, 230, 255, 0.70);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -159,10 +159,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(215, 225, 255, 1.0);
-  --jp-content-font-color1: rgba(205, 210, 233, 1.0);
-  --jp-content-font-color2: rgba(205, 210, 233, 0.54);
-  --jp-content-font-color3: rgba(205, 210, 233, 0.38);
+  --jp-content-font-color0: rgb(225, 233, 255);
+  --jp-content-font-color1: rgba(220, 230, 255, 0.90);
+  --jp-content-font-color2: rgba(220, 230, 255, 0.74);
+  --jp-content-font-color3: rgba(220, 230, 255, 0.58);
 
   --jp-content-link-color: var(--md-blue-700);
 
@@ -176,7 +176,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * Code font variables are used for typography of code and other monospaces content.
    */
 
-  --jp-code-font-size: 13px;
+  --jp-code-font-size: 12px;
   --jp-code-line-height: 1.3077; /* 17px for 13px base */
   --jp-code-padding: 0.385em; /* 5px for 13px base */
   --jp-code-font-family-default: 'Source Code Pro', 'JetBrains Mono', 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
@@ -197,11 +197,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #323752;
-  --jp-layout-color1: #202335;
-  --jp-layout-color2: #1e2336;
-  --jp-layout-color3: #1F2336;
-  --jp-layout-color4: #1F2336;
+  --jp-layout-color0: #333750;
+  --jp-layout-color1: #2B2E41;
+  --jp-layout-color2: #232636;
+  --jp-layout-color3: #181c2c;
+  --jp-layout-color4: #181c2c;
 
   /* Inverse Layout
    *
@@ -209,11 +209,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #ffffff;
-  --jp-inverse-layout-color1: rgba(205, 210, 233, 1.0);
-  --jp-inverse-layout-color2: rgba(205, 210, 233, 0.87);
-  --jp-inverse-layout-color3: rgba(205, 210, 233, 0.54);
-  --jp-inverse-layout-color4: rgba(205, 210, 233, 0.38);
+  --jp-inverse-layout-color0:rgb(54, 61, 92);
+  --jp-inverse-layout-color1: rgb(80, 88, 124);
+  --jp-inverse-layout-color2: rgb(88, 97, 136);
+  --jp-inverse-layout-color3: rgb(101, 110, 151);
+  --jp-inverse-layout-color4: rgb(124, 135, 185);
 
   /* Brand/accent */
 
@@ -296,12 +296,12 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Rendermime styles */
 
   --jp-rendermime-error-background: #fdd;
-  --jp-rendermime-table-row-background: var(--md-grey-100);
+  --jp-rendermime-table-row-background: var(--jp-border-color2);
   --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.25);
+  --jp-dialog-background: var(--jp-layout-color2);
 
   /* Console specific styles */
 
@@ -309,26 +309,26 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color1);
+  --jp-toolbar-border-color: var(--jp-border-color3);
   --jp-toolbar-micro-height: 8px;
-  --jp-toolbar-background: var(--jp-layout-color1);
+  --jp-toolbar-background: var(--jp-layout-color3);
   --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
-  --jp-toolbar-active-background: var(--md-grey-300);
+  --jp-toolbar-active-background: var(--jp-layout-color2);
 
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color1);
+  --jp-input-active-background: var(--jp-layout-color0);
   --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: var(--md-grey-100);
-  --jp-input-border-color: var(--jp-border-color1);
+  --jp-input-background: var(--jp-layout-color2);
+  --jp-input-border-color: var(--jp-border-color2);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: rgba(23, 44, 168, .08);
-  --jp-editor-selected-focused-background: rgba(63, 124, 248, .13);
+  --jp-editor-selected-background: rgba(50, 55, 83, 0.65);
+  --jp-editor-selected-focused-background: rgba(62, 68, 102, 0.85);
   --jp-editor-cursor-color: #f65d22;
 
   /* Code mirror specific styles */
@@ -374,21 +374,21 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-md-cell-background: var(--jp-md-cell-inprompt-background);
   --jp-cell-inprompt-font-color: #5579c1;
   --jp-cell-editor-active-background: #24283c;
-  --jp-cell-editor-border-color:  #1F2336;
-  --jp-cell-editor-border-color-inactive: #1F2336;
+  --jp-cell-editor-border-color:  #24283c;
+  --jp-cell-editor-border-color-inactive: #24283c;
   --jp-cell-active-input-collapser: #3275d5;
-  --jp-cell-active-input-collapser-edit: #5579c1;
+  --jp-cell-active-input-collapser-edit: #4666a5;
   --jp-cell-active-input-collapser-active-hover: #1ca0ff;
   --jp-cell-collapser-hover: #1669f2;
-  --jp-cell-active-output-collapser: #ff598d;
-  --jp-cell-inactive-output-collapser: #a3667e;
-  --jp-cell-active-output-collapser-hover: #ff1d87;
-  --jp-md-cell-active-input-collapser:#79b930;
+  --jp-cell-active-output-collapser: #bb306a;
+  --jp-cell-inactive-output-collapser: #914f69;
+  --jp-cell-active-output-collapser-hover: #e9337f;
+  --jp-md-cell-active-input-collapser:#7da02a;
   --jp-md-cell-active-input-collapser-edit: #5d773f;
-  --jp-md-cell-active-input-collapser-edit-hover: #79b930;
+  --jp-md-cell-active-input-collapser-edit-hover: #7bd415;
   --jp-md-cell-active-input-collapser-hover: #7bd415;
   --jp-matching-bracket-bg: #3b79e1;
-  --jp-nonmatching-bracket-bg: #ff598d;
+  --jp-nonmatching-bracket-bg: #bb306a;
   --jp-matching-bracket-color: #ffffff;
 }
 
@@ -400,13 +400,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 #jp-top-panel {
     border-bottom: var(--jp-border-width) solid var(--jp-border-color0);
-    background: var(--jp-layout-color2);
+    background: var(--jp-layout-color3);
     display: flex;
     min-height: var(--jp-private-menubar-height);
 }
 .p-MenuBar {
     padding-left: 5px;
-    background: var(--jp-layout-color2);
+    background: var(--jp-layout-color3);
     color: var(--jp-ui-font-color1);
     font-size: var(--jp-ui-font-size1);
 }
@@ -415,7 +415,8 @@ all of MD as it is not optimized for dense, information rich UIs.
     border-left: var(--jp-border-width) solid transparent;
     border-right: var(--jp-border-width) solid transparent;
     line-height: var(--jp-private-menubar-height);
-	background: var(--jp-layout-color1);
+	background: var(--jp-layout-color0);
+    color: var(--jp-ui-font-color0) !important;
 }
 .jp-Toolbar {
     color: var(--jp-ui-font-color1);
@@ -438,14 +439,14 @@ all of MD as it is not optimized for dense, information rich UIs.
     min-width: 36px;
     line-height: var(--jp-private-horizontal-tab-height);
     padding: 2px 8px;
-    background: var(--jp-layout-color2);
-    border: var(--jp-border-width) solid var(--jp-border-color2);
+    background: var(--jp-layout-color1);
+    border: var(--jp-border-width) solid var(--jp-layout-color1);
     border-bottom: none;
     position: relative;
     overflow: visible;
 }
 .p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current) {
-    background: var(--jp-layout-color3);
+    background: var(--jp-layout-color3) !important;
 }
 .p-DockPanel-tabBar .p-TabBar-tab:hover,
 .p-DockPanel-tabBar .p-TabBar-tab:hover:not(.p-mod-current) {
@@ -453,7 +454,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 button.jp-mod-styled {
     font-size: var(--jp-ui-font-size1);
-    color: var(--jp-ui-font-color0);
+    color: var(--jp-ui-font-color1);
     border: none;
     box-sizing: border-box;
     text-align: center;
@@ -470,11 +471,17 @@ button.jp-mod-styled {
     -moz-appearance: none;
     overflow: clip;
 }
+
+
 button.jp-Button.bp3-button.bp3-minimal:hover {
+    background: var(--jp-layout-color2);
     background-color: var(--jp-layout-color2);
+    color: var(--jp-ui-font-color0);
 }
 
-
+.jp-icon3[fill] {
+    fill: var(--jp-inverse-layout-color3);
+}
 
 /* ########################################################*/
 /*                   COMMAND PALETTE                       */
@@ -497,7 +504,7 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 
 .jp-SideBar.p-TabBar {
     color: var(--jp-ui-font-color1);
-    background: var(--jp-layout-color3) !important;
+    background: var(--jp-layout-color3);
     font-size: var(--jp-ui-font-size1);
     min-width: calc(var(--jp-private-sidebar-tab-width) + var(--jp-border-width));
     max-width: calc(var(--jp-private-sidebar-tab-width) + var(--jp-border-width));
@@ -505,10 +512,11 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     display: block;
 }
 .jp-SideBar .p-TabBar-tab.p-mod-current {
+    color: var(--jp-ui-font-color0) !important;
 	background: var(--jp-layout-color0) !important;
 }
 .jp-SideBar.p-TabBar.jp-mod-left {
-    border-right: var(--jp-border-width) solid var(--jp-layout-color3);
+    border-right: var(--jp-border-width) solid var(--jp-layout-color2);
 }
 .jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current) {
     color: var(--jp-ui-font-color0) !important;
@@ -517,25 +525,54 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 }
 .jp-SideBar .p-TabBar-tab:not(.p-mod-current) {
     background: var(--jp-layout-color3);
+    color: var(--jp-ui-font-color1) !important;
 }
 .jp-FileBrowser {
     display: flex;
     flex-direction: column;
-    color: var(--jp-ui-font-color2);
-    background: var(--jp-layout-color2) !important;
+    color: var(--jp-ui-font-color1);
+    background: var(--jp-layout-color0) !important;
     font-size: var(--jp-ui-font-size1);
 }
 .jp-DirListing-content {
-    background: var(--jp-layout-color1);
+    background: var(--jp-layout-color0);
 }
 .jp-RunningSessions {
     min-width: var(--jp-sidebar-min-width);
     color: var(--jp-ui-font-color1);
-    background: var(--jp-layout-color1);
+    background: var(--jp-layout-color0);
     font-size: var(--jp-ui-font-size1);
 }
-
-
+.jp-TableOfContents {
+    display: flex;
+    flex-direction: column;
+    background: var(--jp-layout-color0);
+    color: var(--jp-ui-font-color1);
+    font-size: var(--jp-ui-font-size1);
+    height: 100%;
+}
+.jp-TableOfContents-content {
+    background-color: var(--jp-layout-color0);
+}
+.jp-extensionmanager-view {
+    padding-bottom: 0px;
+    color: var(--jp-ui-font-color1);
+    background: var(--jp-layout-color0);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--jp-ui-font-size1);
+}
+.jp-NotebookTools {
+    display: block;
+    min-width: var(--jp-sidebar-min-width);
+    color: var(--jp-ui-font-color1);
+    background: var(--jp-layout-color0);
+    font-size: var(--jp-ui-font-size1);
+    overflow: auto;
+}
+.jp-NotebookTools-content {
+    background: var(--jp-layout-color0);
+}
 
 /* ########################################################*/
 /*                         LAUNCHER                        */
@@ -549,8 +586,8 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     height: var(--jp-private-launcher-card-size);
     margin: 5px;
     padding: 0px;
-    border: 2px solid var(--jp-layout-color2);
-    background: var(--jp-layout-color1);
+    border: 1px solid var(--jp-layout-color2);
+    background: var(--jp-layout-color2);
     box-shadow: none;
     transition: 0.2s;
     border-radius: var(--jp-border-radius);
@@ -558,7 +595,9 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 .jp-LauncherCard:hover {
     box-shadow: none;
     color: var(--jp-ui-font-color0);
-    background: var(--jp-layout-color0);
+    background: var(--jp-layout-color1);
+    border: 1px solid var(--jp-layout-color1);
+    border-radius: var(--jp-border-radius);
 }
 
 
@@ -574,6 +613,7 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     padding-right: 1px;
     font-size: var(--jp-ui-font-size1);
     line-height: var(--jp-private-toolbar-height);
+    color: var(--jp-ui-font-color0);
     height: 100%;
     visibility: visible;
 }
