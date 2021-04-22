@@ -31,6 +31,36 @@ jupyter labextension uninstall @dunovank/jupyterlab_darkside_ui
 
 ## Develop
 
+### Build/Watch in Terminal 1
+
+```bash
+######################## SHELL 1 ##############################
+# List extensions.
+# Clone the repo to your local environment
+# Change directory to the jupyterlab_darkside_ui directory
+# Install package in development mode
+pip install -e .
+
+# Link your development version of the extension with JupyterLab
+jupyter labextension develop . --overwrite
+
+# Rebuild extension Typescript source after making changes
+jlpm run build
+
+# Watch the source directory in terminal 1
+jlpm run watch
+```
+
+### Run JupyterLab in Terminal 2
+
+```bash
+######################## SHELL 2 ##############################
+# Run JupyterLab in terminal 2
+jupyter lab
+```
+
+### OLD
+
 ```bash
 # Build the extension and link for dev in shell 1.
 jupyter labextension develop --overwrite

@@ -117,7 +117,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(205, 210, 233, 1.0); /*rgb(255, 255, 255);*/
+  --jp-ui-font-color0: rgba(215, 225, 255, 1.0);
   --jp-ui-font-color1: rgba(205, 210, 233, 0.87);
   --jp-ui-font-color2: rgba(205, 210, 233, 0.54);
   --jp-ui-font-color3: rgba(205, 210, 233, 0.38);
@@ -159,8 +159,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(205, 210, 233, 1.0);
-  --jp-content-font-color1: rgba(205, 210, 233, 0.87);
+  --jp-content-font-color0: rgba(215, 225, 255, 1.0);
+  --jp-content-font-color1: rgba(205, 210, 233, 1.0);
   --jp-content-font-color2: rgba(205, 210, 233, 0.54);
   --jp-content-font-color3: rgba(205, 210, 233, 0.38);
 
@@ -197,11 +197,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #24273C;
-  --jp-layout-color1: #24283c;
-  --jp-layout-color2: #282c41;
-  --jp-layout-color3: #323752;
-  --jp-layout-color4: #323752;
+  --jp-layout-color0: #323752;
+  --jp-layout-color1: #202335;
+  --jp-layout-color2: #1e2336;
+  --jp-layout-color3: #1F2336;
+  --jp-layout-color4: #1F2336;
 
   /* Inverse Layout
    *
@@ -210,10 +210,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-inverse-layout-color0: #ffffff;
-  --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
-  --jp-inverse-layout-color4: var(--md-grey-600);
+  --jp-inverse-layout-color1: rgba(205, 210, 233, 1.0);
+  --jp-inverse-layout-color2: rgba(205, 210, 233, 0.87);
+  --jp-inverse-layout-color3: rgba(205, 210, 233, 0.54);
+  --jp-inverse-layout-color4: rgba(205, 210, 233, 0.38);
 
   /* Brand/accent */
 
@@ -258,7 +258,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
   --jp-cell-editor-background:  #24283c;
-  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-border-color: #24283c;
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
@@ -351,10 +351,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-meta-color: #54b7f4;
   --jp-mirror-editor-qualifier-color: #db92fe;
   --jp-mirror-editor-builtin-color: #ff8888;
-  --jp-mirror-editor-bracket-color: #997;
+  --jp-mirror-editor-bracket-color: #CDD2E9;
   --jp-mirror-editor-tag-color: #28beaa;
   --jp-mirror-editor-attribute-color: #ff8888;
-  --jp-mirror-editor-header-color: 54b7f4;
+  --jp-mirror-editor-header-color: #54b7f4;
   --jp-mirror-editor-quote-color: #28beaa;
   --jp-mirror-editor-link-color: #54b7f4;
   --jp-mirror-editor-error-color: #ff8888;
@@ -370,24 +370,25 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* NON-STANDARD THEME VARS */
   --jp-editor-cursor: medium solid #ec4d0b;
   --jp-cell-inprompt-background: #24283c;
-  --jp-md-cell-inprompt-background: #23273d;
-  --jp-cell-inprompt-font-color: #888888;
+  --jp-md-cell-inprompt-background: #333750;
+  --jp-md-cell-background: var(--jp-md-cell-inprompt-background);
+  --jp-cell-inprompt-font-color: #5579c1;
   --jp-cell-editor-active-background: #24283c;
   --jp-cell-editor-border-color:  #1F2336;
   --jp-cell-editor-border-color-inactive: #1F2336;
   --jp-cell-active-input-collapser: #3275d5;
-  --jp-cell-active-input-collapser-edit: #b2cdfb;
+  --jp-cell-active-input-collapser-edit: #5579c1;
   --jp-cell-active-input-collapser-active-hover: #1ca0ff;
   --jp-cell-collapser-hover: #1669f2;
-  --jp-cell-active-output-collapser: #c22761;
-  --jp-cell-inactive-output-collapser: #f5ccdb;
-  --jp-cell-active-output-collapser-hover: #f4308a;
+  --jp-cell-active-output-collapser: #ff598d;
+  --jp-cell-inactive-output-collapser: #a3667e;
+  --jp-cell-active-output-collapser-hover: #ff1d87;
   --jp-md-cell-active-input-collapser:#79b930;
-  --jp-md-cell-active-input-collapser-edit: #c5e6a0;
+  --jp-md-cell-active-input-collapser-edit: #5d773f;
   --jp-md-cell-active-input-collapser-edit-hover: #79b930;
   --jp-md-cell-active-input-collapser-hover: #7bd415;
   --jp-matching-bracket-bg: #3b79e1;
-  --jp-nonmatching-bracket-bg: #c22761;
+  --jp-nonmatching-bracket-bg: #ff598d;
   --jp-matching-bracket-color: #ffffff;
 }
 
@@ -428,7 +429,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 .p-TabBar-tab.p-mod-current,
 .p-TabBar-tab.p-mod-current:hover {
-    color: var(--jp-ui-font-color0);
+    color: var(--jp-ui-font-color0) !important;
     background: var(--jp-layout-color0) !important;
 }
 .p-DockPanel-tabBar .p-TabBar-tab {
@@ -470,7 +471,7 @@ button.jp-mod-styled {
     overflow: clip;
 }
 button.jp-Button.bp3-button.bp3-minimal:hover {
-    background-color: var(--jp-layout-color3);
+    background-color: var(--jp-layout-color2);
 }
 
 
@@ -482,10 +483,10 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 .p-CommandPalette {
     color: var(--jp-ui-font-color1);
     font-size: var(--jp-ui-font-size1);
-    background: var(--jp-layout-color1);
+    background: var(--jp-layout-color2);
 }
 .p-CommandPalette-item:hover:not(.p-mod-active):not(.p-mod-disabled) {
-    background: var(--jp-layout-color2);
+    background: var(--jp-layout-color1);
 }
 
 
@@ -504,14 +505,15 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     display: block;
 }
 .jp-SideBar .p-TabBar-tab.p-mod-current {
-	background: var(--jp-layout-color1) !important;
+	background: var(--jp-layout-color0) !important;
 }
 .jp-SideBar.p-TabBar.jp-mod-left {
     border-right: var(--jp-border-width) solid var(--jp-layout-color3);
 }
 .jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current) {
-    background: var(--jp-layout-color1) !important;
-	background-color: var(--jp-layout-color1) !important;
+    color: var(--jp-ui-font-color0) !important;
+    background: var(--jp-layout-color0) !important;
+	background-color: var(--jp-layout-color0) !important;
 }
 .jp-SideBar .p-TabBar-tab:not(.p-mod-current) {
     background: var(--jp-layout-color3);
@@ -519,8 +521,8 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 .jp-FileBrowser {
     display: flex;
     flex-direction: column;
-    color: var(--jp-ui-font-color1);
-    background: var(--jp-layout-color1) !important;
+    color: var(--jp-ui-font-color2);
+    background: var(--jp-layout-color2) !important;
     font-size: var(--jp-ui-font-size1);
 }
 .jp-DirListing-content {
@@ -555,7 +557,8 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 }
 .jp-LauncherCard:hover {
     box-shadow: none;
-    background: var(--jp-layout-color2);
+    color: var(--jp-ui-font-color0);
+    background: var(--jp-layout-color0);
 }
 
 

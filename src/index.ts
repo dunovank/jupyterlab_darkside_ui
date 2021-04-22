@@ -17,7 +17,7 @@ const extension: JupyterFrontEndPlugin<void> = {
     const style = '@dunovank/jupyterlab_darkside_ui/index.css';
     manager.register({
       name: '@dunovank/jupyterlab_darkside_ui',
-      isLight: true,
+      isLight: false,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
