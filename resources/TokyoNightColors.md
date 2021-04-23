@@ -1,7 +1,8 @@
 ## Color Palette
 
 #### Tokyo Night and Tokyo Night Storm
-
+<!-- > TODO -->
+<!-- - Bring more fancy ui like in https://github.com/timkpaine/jupyterlab_miami_nights:  -->
 | Color                                                        | Use                                                          |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | ![#f7768e](https://via.placeholder.com/15/f7768e/f7768e?text=+) `#f7768e` | This keyword, HTML elements, Regex group symbol, CSS units, Terminal Red |
