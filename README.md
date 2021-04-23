@@ -2,7 +2,7 @@
 
 ![Github Actions Status](https://github.com/dunovank/jupyterlab_darkside_ui/workflows/Build/badge.svg)
 
-Legos light ui and syntax theme for jupyterlab
+Darkside ui and syntax theme for JupyterLab
 
 ## Preview
 ![](./jupyterlab_darkside_ui.png)
@@ -53,36 +53,6 @@ jlpm run watch
 
 ```bash
 jupyter lab
-```
-
-### OLD
-
-```bash
-# Build the extension and link for dev in shell 1.
-jupyter labextension develop --overwrite
-```
-
-```bash
-# List extensions.
-jupyter labextension list
-pip list | grep  jupyterlab_darkside_ui
-```
-
-```bash
-# Run and watch jupyterlab in shell 1.
-jlpm watch
-```
-
-```bash
-# Run and watch jupyterlab in shell 2.
-# Look at the remote entry javascript, a webpack5 feature.
-mkdir ~/notebooks && \
-  jupyter lab \
-    --dev-mode \
-    --watch \
-    --notebook-dir=~/notebooks \
-    --ServerApp.token= \
-    --extensions-in-dev-mode
 ```
 
 ## Build
