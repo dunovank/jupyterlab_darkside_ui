@@ -103,7 +103,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * in em all things will be computed relative to that body size.
    */
 
-  --jp-ui-font-scale-factor: 1.2;
+  --jp-ui-font-scale-factor: 1.1;
   --jp-ui-font-size0: 0.83333em;
   --jp-ui-font-size1: 13px; /* Base font size */
   --jp-ui-font-size2: 1.2em;
@@ -151,7 +151,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-size5: 2.0736em;
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
-  --jp-content-presentation-font-size1: 17px;
+  --jp-content-presentation-font-size1: 15px;
 
   --jp-content-heading-line-height: 1;
   --jp-content-heading-margin-top: 1.2em;
@@ -197,7 +197,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #333750;
+  --jp-layout-color0: #2f3a50;
   --jp-layout-color1: #2B2E41;
   --jp-layout-color2: #232636;
   --jp-layout-color3: #181c2c;
@@ -217,7 +217,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color1: rgba(53, 114, 238, .75);
+  --jp-brand-color1: rgba(53, 114, 238, .85);
   --jp-brand-color1: var(--md-blue-500);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
@@ -253,14 +253,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-cell-padding: 5px;
 
-  --jp-cell-collapser-width: 8px;
+  --jp-cell-collapser-width: 9px;
   --jp-cell-collapser-min-height: 20px;
-  --jp-cell-collapser-not-active-hover-opacity: 0.6;
+  --jp-cell-collapser-not-active-hover-opacity: 0.75;
 
-  --jp-cell-editor-background:  #24283c;
-  --jp-cell-editor-border-color: #24283c;
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-cell-editor-active-background: var(--jp-layout-color0);
+  --jp-cell-editor-background:  #22263b;
+  --jp-cell-editor-border-color: var(--jp-cell-editor-background);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--jp-layout-color3);
+  --jp-cell-editor-active-background: var(--jp-cell-editor-background);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 60px;
@@ -278,7 +278,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Notebook specific styles */
 
-  --jp-notebook-padding: 10px;
+  --jp-notebook-padding: 1ex 4ex 1ex 4ex;
   --jp-notebook-select-background: var(--jp-layout-color1);
   --jp-notebook-multiselected-color: rgba(80, 92, 133,.45);
 
@@ -297,7 +297,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-rendermime-error-background: var(--jp-layout-color0);
   --jp-rendermime-table-row-background: var(--jp-border-color2);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-table-row-hover-background: rgba(80, 92, 133,.5);
 
   /* Dialog specific styles */
 
@@ -312,15 +312,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-border-color: var(--jp-border-color3);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color3);
-  --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
+  --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(16, 28, 53, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
   --jp-toolbar-active-background: var(--jp-layout-color2);
 
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color0);
-  --jp-input-hover-background: var(--jp-layout-color1);
+  --jp-input-active-background: var(--jp-cell-editor-background);
+  --jp-input-hover-background: var(---jp-cell-editor-background);
   --jp-input-background: var(--jp-layout-color2);
   --jp-input-border-color: var(--jp-border-color2);
   --jp-input-active-border-color: var(--jp-brand-color1);
@@ -369,24 +369,27 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* NON-STANDARD THEME VARS */
   --jp-editor-cursor: medium solid #ec4d0b;
-  --jp-cell-inprompt-background: #24283c;
-  --jp-md-cell-inprompt-background: #333750;
+  --jp-cell-inprompt-background: var(--jp-cell-editor-background);
+  --jp-md-cell-inprompt-background: #2f3a50;
   --jp-md-cell-background: var(--jp-md-cell-inprompt-background);
-  --jp-cell-inprompt-font-color: #5579c1;
-  --jp-cell-editor-active-background: #24283c;
+  --jp-cell-inprompt-font-color: #4171d1;
+  --jp-cell-editor-active-background: var(--jp-cell-editor-background);
   --jp-cell-editor-border-color:  #24283c;
   --jp-cell-editor-border-color-inactive: #24283c;
-  --jp-cell-active-input-collapser: #3275d5;
-  --jp-cell-active-input-collapser-edit: #4666a5;
-  --jp-cell-active-input-collapser-active-hover: #1ca0ff;
-  --jp-cell-collapser-hover: #1669f2;
-  --jp-cell-active-output-collapser: #bb306a;
-  --jp-cell-inactive-output-collapser: #914f69;
-  --jp-cell-active-output-collapser-hover: #e9337f;
-  --jp-md-cell-active-input-collapser:#7da02a;
-  --jp-md-cell-active-input-collapser-edit: #5d773f;
-  --jp-md-cell-active-input-collapser-edit-hover: #7bd415;
-  --jp-md-cell-active-input-collapser-hover: #7bd415;
+  --jp-input-collapser-color: var(--jp-cell-editor-background);
+  --jp-output-collapser-color: var(--jp-layout-color0);
+  --jp-md-collapser-color: var(--jp-md-cell-inprompt-background);
+  --jp-cell-active-input-collapser: #297bee;
+  --jp-cell-active-input-collapser-edit: #2d60a8;
+  --jp-cell-active-input-collapser-active-hover: #49a7ff;
+  --jp-cell-collapser-hover: #2061c9;
+  --jp-cell-active-output-collapser: #d33376;
+  --jp-cell-inactive-output-collapser: #b32661;
+  --jp-cell-active-output-collapser-hover: #f047a4;
+  --jp-md-cell-active-input-collapser:#7fa723;
+  --jp-md-cell-active-input-collapser-edit: #6a9736;
+  --jp-md-cell-active-input-collapser-edit-hover: #7ac921;
+  --jp-md-cell-active-input-collapser-hover: #7ac921;
   --jp-matching-bracket-bg: #3b79e1;
   --jp-nonmatching-bracket-bg: #bb306a;
   --jp-matching-bracket-color: #ffffff;
@@ -666,6 +669,12 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
   line-height: 170% !important;
   font-weight: 500;
 }
+.jp-Cell-inputArea {
+    flex: 1 1 auto;
+    background: var(--jp-cell-editor-background);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
 .jp-Notebook .jp-InputArea-editor {
     border: 2px solid var(--jp-cell-editor-background);
     border-radius: 0px;
@@ -735,8 +744,10 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
-
-
+/*
+[data-jp-theme-light='false'] .jp-RenderedImage img.jp-needs-light-background {
+    background-color: var(--jp-inverse-layout-color1);
+} */
 
 /* ########################################################*/
 /*                      INPUT PROMPT                       */
@@ -787,7 +798,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
   background: var(--jp-cell-active-input-collapser);
 }
 .jp-Notebook .jp-Cell .jp-Collapser {
-    background: var(--jp-toolbar-border-color);
+    background: var(--jp-input-collapser-color);
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 6px;
@@ -864,7 +875,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
 }
 .jp-Cell:not(.jp-mod-noOutputs) .jp-Cell-outputCollapser {
     min-height: var(--jp-cell-collapser-min-height);
-    background: var(--jp-toolbar-border-color);
+    background: var(--jp-output-collapser-color);
 }
 .jp-Cell:not(.jp-mod-noOutputs) .jp-Cell-outputCollapser:hover {
     box-shadow: none;
@@ -884,7 +895,13 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
 /* ########################################################*/
 /*                MARKDOWN CELL COLLAPSER                  */
 /* ########################################################*/
-
+.jp-Notebook .jp-Cell.jp-MarkdownCell .jp-Collapser {
+    background: var(--jp-md-collapser-color);
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
 .jp-Notebook .jp-Cell.jp-MarkdownCell.jp-mod-active .jp-Collapser {
     background: var(--jp-md-cell-active-input-collapser);
 }
