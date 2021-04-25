@@ -759,7 +759,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     font-family: var(--jp-cell-prompt-font-family);
     opacity: 1;
     cursor: move;
-    font-weight: medium;
+    font-weight: normal;
 }
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt {
     opacity: 1;
@@ -775,7 +775,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     background: var(--jp-cell-inprompt-background);
     color: var(--jp-cell-inprompt-font-color) !important;
     font-family: var(--jp-cell-prompt-font-family);
-	padding-top: 9px;
+	padding-top: 2px;
 	padding-right: 0;
     line-height: var(--jp-code-line-height);
     border: var(--jp-border-width) solid transparent;
@@ -784,8 +784,9 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     text-overflow: ellipsis;
     opacity: 1;
     cursor: move;
-    font-weight: medium;
-	font-size: 9.5pt !important;
+    line-height: 170%;
+    font-weight: 600;
+	font-size: 11pt !important;
 }
 
 
