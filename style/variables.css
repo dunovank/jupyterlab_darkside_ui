@@ -774,19 +774,18 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     flex: 0 0 55px;
     background: var(--jp-cell-inprompt-background);
     color: var(--jp-cell-inprompt-font-color) !important;
-    font-family: var(--jp-cell-prompt-font-family);
-	padding-top: 2px;
+    font-family: var(--jp-ui-font-family) !important;
+	padding-top: 4px;
 	padding-right: 0;
-    line-height: var(--jp-code-line-height);
     border: var(--jp-border-width) solid transparent;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     opacity: 1;
     cursor: move;
-    line-height: 170%;
-    font-weight: 600;
-	font-size: 11pt !important;
+    line-height: 170% !important;
+    font-weight: 500;
+	font-size: 12px !important;
 }
 
 
