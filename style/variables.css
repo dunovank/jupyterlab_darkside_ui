@@ -268,7 +268,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
+  --jp-cell-prompt-not-active-font-color: #666e97;
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
   --jp-cell-inprompt-font-color: #307fc1;
@@ -297,7 +297,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-rendermime-error-background: var(--jp-layout-color0);
   --jp-rendermime-table-row-background: var(--jp-border-color2);
-  --jp-rendermime-table-row-hover-background: rgba(80, 92, 133,.5);
+  --jp-rendermime-table-row-hover-background: #018af34b;
+  --jp-table-odd-rows: #2d3c5a;
+  --jp-table-even-rows: #16233e;
+  --jp-table-header-background: #181d33;
 
   /* Dialog specific styles */
 
@@ -343,25 +346,26 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-variable-2-color: #CDD2E9;
   --jp-mirror-editor-variable-3-color: #db92fe;
   --jp-mirror-editor-punctuation-color: #54b7f4;
-  --jp-mirror-editor-property-color: #ff7979;
+  --jp-mirror-editor-property-color: #ef6b8c; /*#ff7979;*/
   --jp-mirror-editor-operator-color: #54b7f4;
   --jp-mirror-editor-comment-color: #5579c1;
   --jp-mirror-editor-string-color: #98cc64;
   --jp-mirror-editor-string-2-color: #98cc64;
   --jp-mirror-editor-meta-color: #54b7f4;
   --jp-mirror-editor-qualifier-color: #db92fe;
-  --jp-mirror-editor-builtin-color: #ff8888;
+  --jp-mirror-editor-builtin-color: #ef6b8c;
   --jp-mirror-editor-bracket-color: #CDD2E9;
   --jp-mirror-editor-tag-color: #28beaa;
-  --jp-mirror-editor-attribute-color: #ff8888;
+  --jp-mirror-editor-attribute-color: #ef6b8c;
   --jp-mirror-editor-header-color: #54b7f4;
   --jp-mirror-editor-quote-color: #28beaa;
   --jp-mirror-editor-link-color: #54b7f4;
-  --jp-mirror-editor-error-color: #ff8888;
+  --jp-mirror-editor-error-color: #ef6b8c;
   --jp-mirror-editor-hr-color: #5579c1;
   /* Vega extension styles */
 
   --jp-vega-background: #24283c;
+  --jp-dialog-background: rgba(25, 55, 93, 0.4);
 
   /* Sidebar-related styles */
 
@@ -383,9 +387,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-active-input-collapser-edit: #2d60a8;
   --jp-cell-active-input-collapser-active-hover: #49a7ff;
   --jp-cell-collapser-hover: #2061c9;
-  --jp-cell-active-output-collapser: #d33376;
-  --jp-cell-inactive-output-collapser: #b32661;
-  --jp-cell-active-output-collapser-hover: #f047a4;
+  --jp-cell-active-output-collapser: #f1428b;
+  --jp-cell-inactive-output-collapser: #af5384;
+  --jp-cell-active-output-collapser-hover: #ff5db5;
+  --jp-cell-active-output-collapser-edit: #af5384;
   --jp-md-cell-active-input-collapser:#7fa723;
   --jp-md-cell-active-input-collapser-edit: #6a9736;
   --jp-md-cell-active-input-collapser-edit-hover: #7ac921;
@@ -660,14 +665,15 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
 .jp-Notebook div.CodeMirror, div.CodeMirror pre {
  	font-family: var(--jp-code-font-family-default);
 	line-height: 170%;
-	color: var(--jp-cell-inprompt-font-color) !important;
 	font-weight: 500;
+    color: var(--jp-mirror-editor-variable-color) !important;
 }
 .jp-Notebook .CodeMirror pre {
   font-family: var(--jp-code-font-family-default) !important;
   font-variant-ligatures: normal !important;
   line-height: 170% !important;
   font-weight: 500;
+  color: var(--jp-mirror-editor-variable-color) !important;
 }
 .jp-Cell-inputArea {
     flex: 1 1 auto;
@@ -699,10 +705,6 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     border: 2px solid var(--jp-cell-editor-border-color);
     box-shadow: none;
     background-color: var(--jp-cell-editor-active-background);
-}
-.jp-MarkdownOutput.jp-RenderedHTMLCommon {
-    overflow: visible;
-    background: var(--jp-md-cell-background);
 }
 .jp-Notebook.jp-mod-commandMode .jp-Cell.jp-mod-selected {
 	background: transparent !important;
@@ -744,6 +746,29 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+.jp-MarkdownOutput.jp-RenderedHTMLCommon {
+    overflow: visible;
+    background: var(--jp-md-cell-background);
+}
+
+/* ########################################################*/
+/*                   DATAFRAMES/TABLES                     */
+/* ########################################################*/
+.jp-RenderedHTMLCommon tbody tr:nth-child(odd) {
+    background: var(--jp-table-odd-rows);
+}
+.jp-RenderedHTMLCommon tbody tr:nth-child(even) {
+    background: var(--jp-table-even-rows);
+}
+.jp-RenderedHTMLCommon tbody tr:hover {
+    background: var(--jp-rendermime-table-row-hover-background) !important;
+}
+.jp-RenderedHTMLCommon thead {
+    border-bottom: 3px solid var(--jp-table-header-background);
+    vertical-align: bottom;
+    background: var(--jp-table-header-background);
+}
+
 /*
 [data-jp-theme-light='false'] .jp-RenderedImage img.jp-needs-light-background {
     background-color: var(--jp-inverse-layout-color1);
@@ -765,7 +790,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     opacity: 1;
     background: var(--jp-cell-inprompt-background);
     font-weight: normal;
-    color: var(--jp-cell-inprompt-font-color);
+    color: var(--jp-cell-prompt-not-active-font-color) !important;
 }
 .jp-Notebook .jp-Cell .jp-InputPrompt {
     visibility: visible;
@@ -773,7 +798,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     min-width: 30px;
     flex: 0 0 55px;
     background: var(--jp-cell-inprompt-background);
-    color: var(--jp-cell-inprompt-font-color) !important;
+    color: var(--jp-cell-inprompt-font-color);
     font-family: var(--jp-ui-font-family) !important;
 	padding-top: 4px;
 	padding-right: 0;
@@ -833,7 +858,10 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
 /* ########################################################*/
 /*                      OUTPUT PROMPT                       */
 /* ########################################################*/
-
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-OutputPrompt {
+    opacity: var(--jp-cell-prompt-not-active-opacity);
+    color: var(--jp-cell-prompt-not-active-font-color);
+}
 .jp-OutputPrompt {
     flex: 0 0 var(--jp-cell-prompt-width);
 	color: var(--jp-cell-active-output-collapser);
@@ -866,8 +894,8 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
 }
 .jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active:not(.jp-mod-noOutputs) .jp-Cell-outputCollapser {
     min-height: var(--jp-cell-collapser-min-height);
-    background: var(--jp-cell-active-output-collapser) !important;
-    opacity: .3;
+    background: var(--jp-cell-active-output-collapser-edit) !important;
+    opacity: 1.0;
 }
 .jp-Cell.jp-mod-active:not(.jp-mod-noOutputs) .jp-Cell-outputCollapser:hover {
     min-height: var(--jp-cell-collapser-min-height);
