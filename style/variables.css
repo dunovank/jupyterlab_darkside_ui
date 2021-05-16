@@ -487,6 +487,7 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     color: var(--jp-ui-font-color0);
 }
 
+
 .jp-icon3[fill] {
     fill: var(--jp-inverse-layout-color3);
 }
@@ -626,6 +627,10 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     visibility: visible;
 }
 
+
+.jp-OfflineNotebookToolbarIcon {
+    color: var(--jp-ui-font-color1);
+}
 
 
 /*######################################################*/
