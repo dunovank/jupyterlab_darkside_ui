@@ -1,6 +1,7 @@
 # jupyterlab_darkside_ui
 
 ![Github Actions Status](https://github.com/dunovank/jupyterlab_darkside_ui/workflows/Build/badge.svg)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dunovank/jupyterlab_darkside_ui/HEAD?urlpath=lab)
 
 Darkside ui and syntax theme for JupyterLab
 
