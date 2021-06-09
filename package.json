@@ -1,6 +1,6 @@
 {
   "name": "@dunovank/jupyterlab_darkside_ui",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "darkside ui and syntax theme for jupyterlab",
   "keywords": [
     "jupyter",
