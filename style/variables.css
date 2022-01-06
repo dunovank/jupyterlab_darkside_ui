@@ -922,6 +922,12 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     background: var(--jp-rendermime-error-background);
     padding-top: var(--jp-code-padding);
 }
+.jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea {
+    overflow-y: auto;
+    max-height: 200px;
+    box-shadow: none !important;
+    margin-left: var(--jp-private-cell-scrolling-output-offset);
+}
 
 
 
