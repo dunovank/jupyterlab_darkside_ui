@@ -5,6 +5,8 @@
 
 Darkside ui and syntax theme for JupyterLab
 
+For `JupyterLab>=4.0`, see the [**jupyterlab_darkside_theme**](https://github.com/dunovank/jupyterlab_darkside_theme/tree/main) repo.
+
 ## Preview
 ![](./jupyterlab_darkside_ui.png)
 
